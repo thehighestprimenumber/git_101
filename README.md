@@ -1,9 +1,13 @@
 # Git 101 
 
+[TOC]
+
+
+
 ## Qué es Git?
 Es un sistema de control de versiones.  Nos permite mantener la historia de un proyecto y trabajar en equipo de forma fácil y efectiva. Si bien no es el único (SVN, CVS), es definitivamente el más usado en la industria por ser muy flexible y performante.
 
-## Para qué me sirve?
+### Para qué me sirve?
 
 En parte, para evitar esto:
 
@@ -11,14 +15,14 @@ En parte, para evitar esto:
 
 Pero Git no sólo nos permite saber cuál es la versión más reciente de un proyecto, sino que va a facilitar a disintos miembros del equipo trabajar en paralelo, incluso sobre un mismo archivo. También nos va a ayudar a separar las versiones de código que están listas para producción (siendo usadas por los usuarios finales) de las que aún estan en etapa de desarrollo / testing, etc. También nos da trazabilidad sobre los cambios del código, quién escribió tal línea de código, por qué, y cuándo. 
 
-## Git no es GitHub
+### Git no es GitHub
 
 Git es un programa que corre en nuestrad computadoras, y regista los cambios que hacemos sobre un conjunto de archivos. Esta información se guarda en un repositorio, es decir, una carpeta donde se van guardando los cambios que se efectuan sobre los archivos. 
 Si queremos trabajar en equipo, necesitamos un repositorio al que todes podamos acceder. Es entonces cuando buscamos un servidor que albergue el repositorio. Podemos usar un servidor local (en la oficina, por ejemplo), o más típicamente usar uno en la nube, como GitHub, GitLab, o Bitbucket.
 
 ## Instalación
 
-#### 1.1 Linux: `apt get`
+### 1.1 Linux: `apt get`
 
 ```bash
 # actualiza el repositorio ("listado") de aplicaciones
@@ -34,9 +38,9 @@ git --version
 
 ```
 
-#### 1.2 Windows: 
+### 1.2 Windows: 
 
-#### Bajá el [instalador](https://git-for-windows.github.io/) y seguí los pasos.
+Bajá el [instalador](https://git-for-windows.github.io/) y seguí los pasos.
 
 ### 2. Configuralo
 
@@ -50,25 +54,23 @@ git config --global user.email "brian@badLuck.com
 
 Git se puede trabajar integramente desde la consola de comandos. Esto puede resultar un poco vertiginoso al comienzo, así que te recomiendo usar alguna interfaz gráfica que te la haga más facil. Hay [muchísimas](https://git-scm.com/downloads/guis) para elejir. En este tutorial vamos a usar GitKraken
 
-#### 3.1 Linux:
+#### 1 Linux:
 
-##### 3.1.1 .deb
+##### Opción 1: .deb
 
 Bajálo [acá](https://gitkraken.com/download/linux-deb), abrilo y se instala de una.
 
-##### 3.1.2 Snap Store (viene instalada por defecto en Ubuntu 16 para arriba)
+##### Opción 2: Snap Store 
 
 ```bash
-
 # verificá tener snap instalado
+# (viene instalada por defecto en Ubuntu 16 para arriba)
 sudo apt install snapd
 
 sudo snap install gitkraken --classic
-# si tira error porque no tenemos snap instalado, 
-
 ```
 
-##### 3.2 Windows:
+#### 3.2 Windows:
 
 Bajá el [instalador](https://www.gitkraken.com/download) y seguí los pasos.
 
@@ -80,20 +82,12 @@ Vamos a empezar creando un repositorio local en cada una de nuestras PCs.
 
 Git trackea todo tipo de archivos, pero los que son de texto (`.txt`, `.md`, `.java`, `.js`, etc.) nos van a dar más claridad sobre el proceso. 
 
-#### Opción 1: Terminal
-
 ```bash
-# cd hasta la carpeta del proyecto
+# "cd" hasta la carpeta del proyecto
 git init
 ```
 
-#### Opción 2: Git Kraken
-
-` Menu > File > Init Repo ` 
-
-Seleccioná la carpeta del proyecto, el resto dejá los valores default.
-
-#### Chequéa
+### Chequéa
 
 Ahora podemos ver que hay una nueva carpeta. `.git` adentro de la carpeta del proyecto. Esta carpeta está oculta por buenas razones, NO TOCAR!
 
@@ -167,6 +161,12 @@ git fetch
 git branch <nombreDeRama>
 # me paro en la rama
 git checkout <nombreDeRama>
+
+## Todo junto en un solo comando:
+git checkout -b <nombreDeRama>
+# la "-b" indica que se cree una nueva rama
+
+
 ```
 
 ### `merge`
@@ -178,4 +178,18 @@ git checkout master
 git merge <rama a mergear>
 ```
 
-### 
+Buenas prácticas:
+
+* Primero mergear master a mi rama
+* Testear
+* Pushear mi rama
+* Hacer un Pull Request (PR)
+
+## Práctica de cierre
+
+https://learngitbranching.js.org/?locale=es_AR
+
+```bash
+level intro3
+```
+
