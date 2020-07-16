@@ -15,12 +15,21 @@
 
 [https://thehighestprimenumber.github.io/git_101/clase2](https://thehighestprimenumber.github.io/git_101/clase2)
 
+* conexión por ssh
+
 * repaso
+
 * merge conflicts
+
 * cherry pick
+
 * drop
+
 * rebase
+
 * reset
+
+  
 
 ## Clase 3
 
