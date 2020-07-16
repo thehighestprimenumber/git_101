@@ -7,7 +7,7 @@ Es un sistema de control de versiones.  Nos permite mantener la historia de un p
 
 En parte, para evitar esto:
 
-![image-20200714192855199](/home/thpn/Documents/gitTuto/image-20200714192855199.png)
+![image-20200714192855199](./image-20200714192855199.png)
 
 Pero Git no sólo nos permite saber cuál es la versión más reciente de un proyecto, sino que va a facilitar a disintos miembros del equipo trabajar en paralelo, incluso sobre un mismo archivo. También nos va a ayudar a separar las versiones de código que están listas para producción (siendo usadas por los usuarios finales) de las que aún estan en etapa de desarrollo / testing, etc. También nos da trazabilidad sobre los cambios del código, quién escribió tal línea de código, por qué, y cuándo. 
 
@@ -133,13 +133,25 @@ Buenas Prácticas
 
 ... crear usuario y primer repo en github
 
+```bash
+# vinculamos "<remote_name>" con la url del repositorio hosteado en github
 git remote add <remote_name> <remote_repo_url>
 
-git push -u <remote_name> <local_branch_name>
+# "pusheamos" el estado del repo hasta el último commit al repo remoto
+git push -u <remote_name> master
+# la "u" setea <remote_name> como el remoto default
+
+## "<remote_name>" puede ser el cualquiera, el nombre estandar es "origin"
+```
 
 #### 6.2 Clonar un proyecto existente
 
-git clone
+```bash
+# vinculamos "<remote_name>" con la url del repositorio hosteado en github
+git clone <remote_repo_url>
+```
+
+#### 
 
 
 
