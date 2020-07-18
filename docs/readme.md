@@ -1,8 +1,8 @@
 # Taller de Git
 
-## Clase 1
+## Intro a git
 
-[https://thehighestprimenumber.github.io/git_101/clase1](https://thehighestprimenumber.github.io/git_101/clase1)
+[https://thehighestprimenumber.github.io/git_101/intro](https://thehighestprimenumber.github.io/git_101/intro)
 
 * intro a git
 * repositorios locales y remotos
@@ -11,31 +11,46 @@
 * push / pull
 * merge
 
-## Clase 2
+## Git intermedio
 
-[https://thehighestprimenumber.github.io/git_101/clase2](https://thehighestprimenumber.github.io/git_101/clase2)
-
-* conexión por ssh
+[https://thehighestprimenumber.github.io/git_101/intermedio](https://thehighestprimenumber.github.io/git_101/intermedio)
 
 * repaso
 
+* .gitignore
+
+* conexión por ssh
+
 * merge conflicts
+
+* stash, pop, apply, drop
 
 * cherry pick
 
 * drop
 
-* rebase
-
 * reset
+
+* revert
+
+* ammend
 
   
 
-## Clase 3
+## Git + PM
 
-[https://thehighestprimenumber.github.io/git_101/clase3](https://thehighestprimenumber.github.io/git_101/clase3)
+[https://thehighestprimenumber.github.io/git_101/pm](https://thehighestprimenumber.github.io/git_101/pm)
 
-* WIP
+* squash
+* rebase
+* force
+* delete branches
+* Project Management en GitHub
+  * Documentación
+  * Intro a Kanban
+  * Vincular commits a issues
+  * Versionado
+* Práctica
 
 
 
